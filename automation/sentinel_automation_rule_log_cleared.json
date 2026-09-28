@@ -1,0 +1,31 @@
+{
+  "id": "/subscriptions/sub-id/resourceGroups/rg-sentinel/providers/Microsoft.OperationalInsights/workspaces/sentinel-works/providers/Microsoft.SecurityInsights/AutomationRules/f5ded614-2ced-4fdd-8214-4d0a0df1fdfe",
+  "name": "f5ded614-2ced-4fdd-8214-4d0a0df1fdfe",
+  "properties": {
+    "displayName": "Escalate Log Cleared Events",
+    "order": 1,
+    "triggeringLogic": {
+      "isEnabled": true,
+      "expirationTimeUtc": null,
+      "triggersOn": "Incidents",
+      "triggersWhen": "Created",
+      "conditions": [
+        {
+          "property": "IncidentAnalyticRuleIds",
+          "operation": "Contains",
+          "values": ["NRT Security Event log cleared"]
+        }
+      ]
+    },
+    "actions": [
+      {
+        "order": 1,
+        "actionType": "ModifyProperties",
+        "actionConfiguration": {
+          "severity": "High",
+          "labels": ["defense-evasion", "log-tampering"]
+        }
+      }
+    ]
+  }
+}

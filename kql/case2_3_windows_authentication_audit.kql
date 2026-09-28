@@ -1,0 +1,4 @@
+let TargetIP = "10.0.1.50";
+SecurityEvent
+| where WorkstationName has TargetIP or IpAddress == TargetIP
+| where EventID in (4624, 4625) // Successful and Failed Logins

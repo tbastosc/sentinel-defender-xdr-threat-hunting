@@ -1,0 +1,9 @@
+CrowdStrikeAlerts
+| extend DeviceName = tostring(split(DisplayName, " on ")[-1])
+| summarize
+    AlertCount = count(),
+    Tactics = make_set(Tactics),
+    FirstAlert = min(TimeGenerated),
+    LastAlert = max(TimeGenerated)
+    by DeviceName
+| sort by AlertCount desc

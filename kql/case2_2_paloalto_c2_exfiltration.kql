@@ -1,0 +1,6 @@
+let TargetIP = "10.0.1.50";
+CommonSecurityLog
+| where SourceIP == TargetIP
+| where Activity !in ("drop", "deny", "reset-both")
+| sort by TimeGenerated desc
+| project Activity, DeviceVendor, DeviceAction, DestinationPort, DestinationIP, DeviceName, ReceivedBytes, SentBytes, SourceHostName

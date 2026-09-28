@@ -1,0 +1,9 @@
+CommonSecurityLog
+| where DeviceVendor == "Palo Alto Networks"
+| where Activity in ("drop", "deny", "reset-both")
+| summarize
+    BlockedConnections = count(),
+    TargetedPorts = dcount(DestinationPort),
+    TargetedServers = make_set(DestinationIP)
+    by SourceIP
+| sort by BlockedConnections desc
