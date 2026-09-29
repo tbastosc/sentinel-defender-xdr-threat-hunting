@@ -811,10 +811,5 @@ let EmailsDoSender =
 
 ·       [Custom detection rules in Microsoft Defender - short guide \| Kacper SecOps-Blog](https://kacyper44.github.io/defender/2024/12/01/Custom-detection-rules.html)
 
-## Contacts and Responsibilities
-
-·       Playbook Owner: *\[tabastos@domain.pt\]*
-
-·       Query review and tuning: *\[*<TABASTOS@domain.pt>*\]\[*
 
 </div>
