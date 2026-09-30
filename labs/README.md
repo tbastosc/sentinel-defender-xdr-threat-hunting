@@ -81,7 +81,7 @@ CrowdStrikeAlerts
 ```
 
 ### 🖼️ Evidence & Execution
-![CrowdStrike Advanced Hunting Query](./images/img1_crowdstrike.png)
+![CrowdStrike Advanced Hunting Query](/images/img1_crowdstrike.png)
 
 ### 📸 Screenshot & Findings (`img1_crowdstrike.png`)
 * **Evidence Ingestion**: The screenshot displays Microsoft Defender's **Advanced Hunting** query editor running KQL against `CrowdStrikeAlerts`.
@@ -112,7 +112,7 @@ CommonSecurityLog
 ```
 
 #### 🖼️ Evidence & Execution
-![Palo Alto Reconnaissance Query](./images/img2_paloalto.png)
+![Palo Alto Reconnaissance Query](/images/img2_paloalto.png)
 
 #### 📸 Screenshot & Findings (`img2_paloalto.png`)
 * **Evidence Ingestion**: The screenshot shows Advanced Hunting executing over firewall telemetry (`CommonSecurityLog`), filtering specifically for dropped or denied packets.
@@ -138,7 +138,7 @@ CommonSecurityLog
 ```
 
 #### 🖼️ Evidence & Execution
-![Palo Alto C2 Communication & Exfiltration](./images/img3_paloalto.png)
+![Palo Alto C2 Communication & Exfiltration](/images/img3_paloalto.png)
 
 #### 📸 Screenshot & Findings (`img3_paloalto.png`)
 * **Evidence Ingestion**: Advanced Hunting results showing permitted outbound sessions from host `10.0.1.50`.
@@ -176,7 +176,7 @@ SecurityEvent
 Detect adversary attempts to cover their tracks by clearing Windows Security Event logs.
 
 #### 🖼️ Evidence & Execution
-![NRT Security Event Log Cleared Incident](./images/img4_security_eventlog.png)
+![NRT Security Event Log Cleared Incident](/images/img4_security_eventlog.png)
 
 #### 📸 Screenshot & Findings (`img4_security_eventlog.png`)
 * **Evidence Ingestion**: Displays the Microsoft Defender Incidents dashboard for workspace `sentinel-works`.
@@ -192,7 +192,7 @@ Detect adversary attempts to cover their tracks by clearing Windows Security Eve
 Implement automated incident handling to immediately elevate severity and apply SecOps tags when defense evasion activities occur.
 
 #### 🖼️ Evidence & Execution
-![Automation Rule Configuration](./images/img5_automation_standart_rule.png)
+![Automation Rule Configuration](/images/img5_automation_standart_rule.png)
 
 #### 📸 Screenshot & Findings (`img5_automation_standart_rule.png`)
 * **Evidence Ingestion**: Displays the Sentinel Automation Rule configuration interface in Microsoft Defender portal.
